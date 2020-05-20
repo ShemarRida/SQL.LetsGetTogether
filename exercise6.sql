@@ -1,0 +1,1 @@
+select count(CustomerID), Country from Customers group by Country having count(CustomerID)>10 order by count(CustomerID) desc;
